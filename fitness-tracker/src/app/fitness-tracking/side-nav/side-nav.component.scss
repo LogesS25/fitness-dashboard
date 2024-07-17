@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(135deg, #008080, #80ced6);
+    background: linear-gradient(135deg, #000000, #322dde);
     padding: 5px 10px;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@
 
 .toggle-button-row mat-icon {
   font-size: 24px;
-  color: #008080;
+  color: #000000;
 }
 
 .slide-out-panel {
@@ -35,7 +35,7 @@
   left: 0;
   bottom: 0;
   width: 250px;
-  background: linear-gradient(135deg, #008080, #80ced6);
+  background: linear-gradient(135deg, #000000, #322dde);
   transition: transform 0.3s ease-out;
   z-index: 1000;
   border-top-right-radius: 20px;
@@ -62,11 +62,11 @@
 }
 
 .edit-col:hover {
-  color: #008080;
+  color: #000000;
 }
 
 .nav {
   text-align: center;
   justify-content: center;
-  background-color: #87dcdc;
+  background-color: #9995f5;
 }
