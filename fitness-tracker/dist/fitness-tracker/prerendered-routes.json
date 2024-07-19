@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/fitness-tracking",
+    "/fitness-tracking/addworkout",
+    "/fitness-tracking/dashboard",
+    "/fitness-tracking/login",
+    "/fitness-tracking/side-nav"
+  ]
+}
