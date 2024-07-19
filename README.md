@@ -1,5 +1,8 @@
-## fitness-dashboard
-A single page page angular application for fitness tracking
+# Fitness-dashboard
+This is a single page page angular application for fitness tracking. 
+I have created a dummy login page with no authentication, next a dashboard page , through that dashboard we can add workout details and it displays the details immediately. then by clicking back we come back to dashboard. 
+
+The Chart analysis part for workout details is yet to be implemented.
 
 # Code Coverage
 
