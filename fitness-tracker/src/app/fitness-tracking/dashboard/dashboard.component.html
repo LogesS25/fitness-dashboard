@@ -22,28 +22,7 @@
                 <button class="button" (click)="onIncome()">Add Workout Details</button> 
             </div>
         </div>
-
-        <!-- Gym Expense Card -->   
-        <div class="card">
-            <div class="card-header">
-              <span class="icon expense-icon"><mat-icon>directions_run</mat-icon></span>
-              <h2>Expense</h2>
-            </div>
-            <hr>
-            <div class="income-details">
-              <div class="month">
-                <h3>Last Few Months</h3>
-                <ul>
-                  <li *ngFor="let monthExpense of lastMonthsExpense">{{ monthExpense }}</li>
-                </ul>
-              </div>
-              <div class="month">
-                <h3>Current Month</h3>
-                <p>{{ currentMonthExpense }}</p>
-              </div>
-            </div>
-            <button class="button" (click)="onExpense()">Add Expenses</button> 
-        </div>
+       
 
         <!-- To DO List -->
         <div class="card">
