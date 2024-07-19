@@ -118,6 +118,6 @@ export class AddworkoutComponent {
   }
 
   onBack() {
-    this.router.navigate(['/fitness-tracking/dashboard']);
+    this.router.navigate(['/dashboard']);
   }
 }

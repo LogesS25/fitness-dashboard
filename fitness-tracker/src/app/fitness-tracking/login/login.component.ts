@@ -40,7 +40,7 @@ export class LoginComponent {
   login() {
     if (this.loginForm.valid) {
       console.log("Login info==>", this.loginForm.value);
-      this.router.navigate(['/fitness-tracking/dashboard']);
+      this.router.navigate(['/dashboard']);
     } else {
       this.snackBar.open('Invalid email or password!', 'Close', { duration: 3000 });
     }
@@ -51,7 +51,7 @@ export class LoginComponent {
       setTimeout(() => {
         window.location.reload();
       }, 2000);
-      this.router.navigate(['/fitness-tracking/login']);
+      this.router.navigate(['/login']);
     } else {
       this.snackBar.open('Please fill in all fields correctly!', 'Close', { duration: 3000 });
     }

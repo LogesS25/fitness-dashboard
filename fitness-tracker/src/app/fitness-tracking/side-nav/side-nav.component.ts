@@ -20,16 +20,16 @@ export class SideNavComponent {
 }
 
 onDash(){
-  this.router.navigate(['/fitness-tracking/dashboard']);
+  this.router.navigate(['/dashboard']);
 }
 onProfile(){
-  this.router.navigate(['/fitness-tracking/profile']);
+  this.router.navigate(['/profile']);
 }
 onHistory(){
-  this.router.navigate(['/fitness-tracking/history']);
+  this.router.navigate(['/history']);
 }
 onLogout(){
-  this.router.navigate(['/fitness-tracking/login']);
+  this.router.navigate(['/login']);
 }
 
 

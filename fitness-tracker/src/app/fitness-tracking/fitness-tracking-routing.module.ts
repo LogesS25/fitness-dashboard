@@ -7,7 +7,7 @@ import { AddworkoutComponent } from './addworkout/addworkout.component';
 
 const routes: Routes = [
     
-    {path:'login',component:LoginComponent},
+    {path:'',component:LoginComponent},
     {path:'side-nav',component:SideNavComponent},
     {path:'dashboard',component:DashboardComponent},
     {path:'addworkout',component:AddworkoutComponent}
