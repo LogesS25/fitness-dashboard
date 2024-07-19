@@ -1,7 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+
 
 @Component({
   selector: 'app-addworkout',
@@ -18,6 +21,7 @@ export class AddworkoutComponent {
   januaryWorkouts: any[] = [
     { name: 'John', workoutType: 'Cardio', workoutMinutes: 60 },
     { name: 'Doe', workoutType: 'Strength Training', workoutMinutes: 45 },
+    
   ];
   februaryWorkouts: any[] = [
     { name: 'Jane', workoutType: 'Yoga', workoutMinutes: 30 },
