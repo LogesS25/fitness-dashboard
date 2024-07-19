@@ -32,7 +32,7 @@ export class DashboardComponent {
   constructor(public router: Router) { }
 
   onIncome() {
-    this.router.navigate(['/fitness-tracking/income']);
+    this.router.navigate(['/fitness-tracking/addworkout']);
   }
   onExpense() {
     this.router.navigate(['/fitness-tracking/expense']);

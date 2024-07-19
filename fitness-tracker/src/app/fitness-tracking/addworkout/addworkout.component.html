@@ -1,0 +1,69 @@
+<div class="navbar">
+    <h2>
+        GYM WORKOUTS
+    </h2>
+</div>
+
+<div class="main-container">
+    <div class="container">
+        <h2>Workout Details</h2>
+        <form [formGroup]="workoutForm" (ngSubmit)="onSubmit()" class="input-form">
+            <div class="form-group">
+                <select formControlName="month" id="month" class="form-control" (change)="onChange($event)">
+                    <option value="" disabled>Select Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                </select>
+            </div>
+            <div class="total-workout">
+                Total Workout Minutes for {{ selectedMonth }}: {{ calculateTotalWorkoutMinutes(selectedMonth) }} mins
+            </div>
+            <div class="form-group">
+                <label for="workoutType">Workout Type:</label>
+                <select formControlName="workoutType" id="workoutType" class="form-control"
+                    [class.disabled-dropdown]="!monthSelected">
+                    <option value="" disabled>Select Workout Type</option>
+                    <option value="Cardio">Cardio</option>
+                    <option value="Strength Training">Strength Training</option>
+                    <option value="Yoga">Yoga</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" formControlName="name" id="name" class="form-control"
+                    placeholder="Enter name" [class.disabled-dropdown]="!monthSelected">
+            </div>
+            <div class="form-group">
+                <label for="workoutMinutes">Workout Minutes:</label>
+                <input type="number" formControlName="workoutMinutes" id="workoutMinutes" class="form-control"
+                    placeholder="Enter workout minutes" [class.disabled-dropdown]="!monthSelected">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="onSubmit()"
+            [class.disabled-dropdown]="!monthSelected">Add</button>
+        </form>
+
+        <hr>
+        <h3>Workout List - {{ selectedMonth }}</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Workout Type</th>
+                    <th>Workout Minutes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let workout of getFilteredWorkouts()">
+                    <td>{{ workout.name }}</td>
+                    <td>{{ workout.workoutType }}</td>
+                    <td>{{ workout.workoutMinutes }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="input-form">
+            <button class="btn btn-primary" (click)="onBack()">Back</button>
+            <button class="btn btn-primary" (click)="saveForm()">Save</button>
+        </div>
+    </div>
+</div>
